@@ -5,6 +5,7 @@
  */
 package com.mycompany.programcovid;
 
+import static java.lang.Integer.parseInt;
 import java.util.Scanner;
 
 
@@ -16,7 +17,7 @@ public class Main {
        paciente a[]= new paciente[2];
        
        String nombre="";
-       String edad="";
+       int edad=0;
        String identificacion="";
        String direccion="";
        String correo="";
@@ -28,7 +29,7 @@ public class Main {
            System.out.println("Ingresa tu nombre: ");
            nombre = leer.nextLine();
            System.out.println("Ingresa tu edad: ");
-           edad = leer.nextLine();
+           edad = parseInt(leer.nextLine());
            System.out.println("Ingresa tu identificacion: ");
            identificacion = leer.nextLine();
            System.out.println("Ingresa tu direccion: ");

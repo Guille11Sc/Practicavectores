@@ -7,7 +7,7 @@ public class paciente {
 
     //atributos
     private String nombre;
-    private String edad;
+    private int edad;
     private String identificacion;
     private String direccion;
     private String correo;
@@ -17,7 +17,7 @@ public class paciente {
     
     
     
-    public paciente(String nombre,String edad,String identificacion,String direccion,String correo,String tipoSangre){
+    public paciente(String nombre,int edad,String identificacion,String direccion,String correo,String tipoSangre){
         this.nombre=nombre;
         this.edad=edad;
         this.identificacion=identificacion;
@@ -36,7 +36,7 @@ public class paciente {
         this.nombre = nombre;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
@@ -60,7 +60,7 @@ public class paciente {
         return nombre;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
