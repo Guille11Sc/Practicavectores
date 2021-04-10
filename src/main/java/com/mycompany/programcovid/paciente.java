@@ -1,9 +1,10 @@
 
 package com.mycompany.programcovid;
-import javax.swing.JOptionPane;
+
 
 public class paciente {
-    
+ 
+
     //atributos
     private String nombre;
     private String edad;
@@ -80,4 +81,7 @@ public class paciente {
     }
     //metodos
    
+    
+        
+    
 }

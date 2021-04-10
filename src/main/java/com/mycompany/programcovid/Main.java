@@ -23,7 +23,7 @@ public class Main {
        String tipoSangre="";
        
        
-       
+       //llenar los datos generales de los pacientes
        for(int i=0;i<a.length;i++){
            System.out.println("Ingresa tu nombre: ");
            nombre = leer.nextLine();
@@ -40,7 +40,7 @@ public class Main {
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
            
        }
-       
+       //mostrar los datos generales de los pacientes
         for(int i=0;i<a.length;i++){
             System.out.println(a[i].getNombre()+" "+a[i].getEdad()+" "+a[i].getIdentificacion()+" "+
                     a[i].getDireccion()+" "+a[i].getCorreo()+" "+a[i].getTipoSangre());
