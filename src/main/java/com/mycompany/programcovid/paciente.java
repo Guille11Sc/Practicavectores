@@ -16,7 +16,7 @@ public class paciente {
     
     
     
-    public paciente(String nom,String ed,String ident,String direc,String email,String tipoSangre){
+    public paciente(String nombre,String edad,String identificacion,String direccion,String correo,String tipoSangre){
         this.nombre=nombre;
         this.edad=edad;
         this.identificacion=identificacion;
