@@ -12,21 +12,57 @@ package com.mycompany.programcovid;
 public class infoClinica {
     
     private String enfermedadPrimaria;
-    private String enfermedadPecundaria;
+    private String enfermedadSecundaria;
     private String fechaAdquirida;
+    private String sintomasPresentados;
+    private String medicamentosActuales;
     
     
     
-     public infoClinica(String enfermedadPrimaria, String enfermedadSecundaria,String fechaAdquirida){
+    
+     public infoClinica(String enfermedadPrimaria, String enfermedadSecundaria,String fechaAdquirida, String sintomasPresentados, String medicamentosActuales){
         this.enfermedadPrimaria=enfermedadPrimaria;
-        this.enfermedadPecundaria=enfermedadSecundaria;
+        this.enfermedadSecundaria=enfermedadSecundaria;
         this.fechaAdquirida=fechaAdquirida;
+        this.sintomasPresentados= sintomasPresentados;
+        this.medicamentosActuales=medicamentosActuales;
     }
      
       
     @Override
     public String toString(){
-        return enfermedadPrimaria+","+enfermedadPecundaria+","+fechaAdquirida;
+        return enfermedadPrimaria+","+enfermedadSecundaria+","+fechaAdquirida+","+sintomasPresentados+","+medicamentosActuales;
     }
-    
+
+    public String getEnfermedadPrimaria() {
+        return enfermedadPrimaria;
+    }
+
+    public void setEnfermedadPrimaria(String enfermedadPrimaria) {
+        this.enfermedadPrimaria = enfermedadPrimaria;
+    }
+
+    public String getEnfermedadPecundaria() {
+        return enfermedadSecundaria;
+    }
+
+    public void setEnfermedadPecundaria(String enfermedadPecundaria) {
+        this.enfermedadSecundaria = enfermedadPecundaria;
+    }
+
+    public String getFechaAdquirida() {
+        return fechaAdquirida;
+    }
+
+    public void setFechaAdquirida(String fechaAdquirida) {
+        this.fechaAdquirida = fechaAdquirida;
+    }
+    public String sintomasPresentados() {
+        return enfermedadPrimaria;
+    }
+     public void sintomasPresentados(String fechaAdquirida) {
+        this.fechaAdquirida = fechaAdquirida;
+    }
+
+       
 }

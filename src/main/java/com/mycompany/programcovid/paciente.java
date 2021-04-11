@@ -29,7 +29,7 @@ public class paciente {
     
     @Override
     public String toString(){
-        return nombre+","+edad+","+identificacion+","+direccion+","+correo+","+tipoSangre;
+        return "Nombre: "+nombre+"/n Edad: "+edad+"/n Identificación: "+identificacion+"/n Dirección: "+direccion+"/n Correo: "+correo+"/N Tipo de sangre: "+tipoSangre;
     }
 //get and set
     public void setNombre(String nombre) {

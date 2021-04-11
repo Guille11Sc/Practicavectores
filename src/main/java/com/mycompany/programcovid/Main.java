@@ -23,6 +23,12 @@ public class Main {
        String correo="";
        String tipoSangre="";
        
+       String enfermedadPrimaria="";
+       String enferedadSecundaria="";
+       String fechaAdquirida="";
+       String síntomasPresentados="";
+       String medicamentosActuales="";
+       
        
        //llenar los datos generales de los pacientes
        for(int i=0;i<a.length;i++){
@@ -38,13 +44,23 @@ public class Main {
            correo = leer.nextLine();
            System.out.println("Ingresa tu tipo de sangre: ");
            tipoSangre = leer.nextLine();
+          // System.out.println("Ingresa tu tipo de sangre: ");
+          // tipoSangre = leer.nextLine();
+          //  System.out.println("Ingresa tu tipo de sangre: ");
+           //tipoSangre = leer.nextLine();
+            //System.out.println("Ingresa tu tipo de sangre: ");
+           //tipoSangre = leer.nextLine();
+            //System.out.println("Ingresa tu tipo de sangre: ");
+           //tipoSangre = leer.nextLine();
+            //System.out.println("Ingresa tu tipo de sangre: ");
+           //tipoSangre = leer.nextLine();
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
            
        }
        //mostrar los datos generales de los pacientes
         for(int i=0;i<a.length;i++){
-            System.out.println(a[i].getNombre()+" "+a[i].getEdad()+" "+a[i].getIdentificacion()+" "+
-                    a[i].getDireccion()+" "+a[i].getCorreo()+" "+a[i].getTipoSangre());
+            System.out.println("Datos paciente número "+(i+1)+": Nombre: "+a[i].getNombre()+" Edad: "+a[i].getEdad()+" Id: "+a[i].getIdentificacion()+" Dirección: "+
+                    a[i].getDireccion()+" Correo: "+a[i].getCorreo()+" Tipo de sangre: "+a[i].getTipoSangre());
     }
      
     }
