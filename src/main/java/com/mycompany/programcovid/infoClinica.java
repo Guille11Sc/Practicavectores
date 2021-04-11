@@ -42,12 +42,12 @@ public class infoClinica {
         this.enfermedadPrimaria = enfermedadPrimaria;
     }
 
-    public String getEnfermedadPecundaria() {
+    public String getEnfermedadSecundaria() {
         return enfermedadSecundaria;
     }
 
-    public void setEnfermedadPecundaria(String enfermedadPecundaria) {
-        this.enfermedadSecundaria = enfermedadPecundaria;
+    public void setEnfermedadSecundaria(String enfermedadSecundaria) {
+        this.enfermedadSecundaria = enfermedadSecundaria;
     }
 
     public String getFechaAdquirida() {
@@ -57,12 +57,26 @@ public class infoClinica {
     public void setFechaAdquirida(String fechaAdquirida) {
         this.fechaAdquirida = fechaAdquirida;
     }
-    public String sintomasPresentados() {
-        return enfermedadPrimaria;
+
+    public String getSintomasPresentados() {
+        return sintomasPresentados;
     }
-     public void sintomasPresentados(String fechaAdquirida) {
-        this.fechaAdquirida = fechaAdquirida;
+
+    public void setSintomasPresentados(String sintomasPresentados) {
+        this.sintomasPresentados = sintomasPresentados;
     }
+
+    public String getMedicamentosActuales() {
+        return medicamentosActuales;
+    }
+
+    public void setMedicamentosActuales(String medicamentosActuales) {
+        this.medicamentosActuales = medicamentosActuales;
+    }
+
+   
+
+   
 
        
 }
