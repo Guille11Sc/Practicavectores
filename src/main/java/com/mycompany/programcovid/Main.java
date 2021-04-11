@@ -16,7 +16,7 @@ public class Main {
        Scanner leer=new Scanner(System.in);    
        paciente a[]= new paciente[2];
        infoClinica b[]=new infoClinica[2];
-     
+       vacunas vacuna=new vacunas();
        
        String nombre="";
        int edad=0;
@@ -37,28 +37,31 @@ public class Main {
            nombre = leer.nextLine();
            System.out.println("Ingresa tu edad: ");
            edad = parseInt(leer.nextLine());
-           System.out.println("Ingresa tu identificacion: ");
+           /*System.out.println("Ingresa tu identificacion: ");
            identificacion = leer.nextLine();
            System.out.println("Ingresa tu direccion: ");
            direccion = leer.nextLine();
            System.out.println("Ingresa tu correo: ");
            correo = leer.nextLine();
            System.out.println("Ingresa tu tipo de sangre: ");
-           tipoSangre = leer.nextLine();
+           tipoSangre = leer.nextLine();*/
            System.out.println("Ingresa tu Enfermedad primaria: ");
            enfermedadPrimaria = leer.nextLine();
-           System.out.println("Ingresa tu enfermedad Secundaria: ");
+           /*System.out.println("Ingresa tu enfermedad Secundaria: ");
            enfermedadSecundaria = leer.nextLine();
            System.out.println("Ingresa fecha en que adquirio la enfermedad: ");
            fechaAdquirida = leer.nextLine();
            System.out.println("Ingresa sintomas de covid presentados: ");
            sintomasPresentados = leer.nextLine();
            System.out.println("Ingresa medicamento que tome actualmente: ");
-           medicamentosActuales = leer.nextLine();
+           medicamentosActuales = leer.nextLine();*/
            
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
            b[i]= new infoClinica(enfermedadPrimaria,enfermedadSecundaria,fechaAdquirida,sintomasPresentados,medicamentosActuales);
-           
+           if (edad>50 && enfermedadPrimaria=="hipertension" || enfermedadPrimaria=="diabetes" || enfermedadPrimaria=="dislipidemia"
+                   || enfermedadPrimaria=="cancer" || enfermedadPrimaria=="tiroides" || enfermedadPrimaria=="huerfana"){
+           vacuna.restarVacuna();
+           }
        }
        
        
@@ -68,7 +71,7 @@ public class Main {
                     a[i].getDireccion()+" Correo: "+a[i].getCorreo()+" Tipo de sangre: "+a[i].getTipoSangre()+"Enfermedad primaria: "+b[i].getEnfermedadPrimaria()+"Enfermedad secimdaroa: "+b[i].getEnfermedadSecundaria()
                      +"Fecha adquirida: "+b[i].getFechaAdquirida()+"Sintomas: "+b[i].getSintomasPresentados()+"Medicamentos actuales: "+b[i].getMedicamentosActuales());
     }
-     
+     vacuna.mostrarVacunas();
     }
     
 }
