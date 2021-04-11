@@ -15,6 +15,8 @@ public class Main {
     public static void main(String[] args) {
        Scanner leer=new Scanner(System.in);    
        paciente a[]= new paciente[2];
+       infoClinica b[]=new infoClinica[2];
+     
        
        String nombre="";
        int edad=0;
@@ -22,11 +24,10 @@ public class Main {
        String direccion="";
        String correo="";
        String tipoSangre="";
-       
        String enfermedadPrimaria="";
-       String enferedadSecundaria="";
+       String enfermedadSecundaria="";
        String fechaAdquirida="";
-       String síntomasPresentados="";
+       String sintomasPresentados="";
        String medicamentosActuales="";
        
        
@@ -44,13 +45,28 @@ public class Main {
            correo = leer.nextLine();
            System.out.println("Ingresa tu tipo de sangre: ");
            tipoSangre = leer.nextLine();
+           System.out.println("Ingresa tu Enfermedad primaria: ");
+           enfermedadPrimaria = leer.nextLine();
+           System.out.println("Ingresa tu enfermedad Secundaria: ");
+           enfermedadSecundaria = leer.nextLine();
+           System.out.println("Ingresa fecha en que adquirio la enfermedad: ");
+           fechaAdquirida = leer.nextLine();
+           System.out.println("Ingresa sintomas de covid presentados: ");
+           sintomasPresentados = leer.nextLine();
+           System.out.println("Ingresa medicamento que tome actualmente: ");
+           medicamentosActuales = leer.nextLine();
+           
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
+           b[i]= new infoClinica(enfermedadPrimaria,enfermedadSecundaria,fechaAdquirida,sintomasPresentados,medicamentosActuales);
            
        }
+       
+       
        //mostrar los datos generales de los pacientes
         for(int i=0;i<a.length;i++){
             System.out.println("Datos paciente número "+(i+1)+": Nombre: "+a[i].getNombre()+" Edad: "+a[i].getEdad()+" Id: "+a[i].getIdentificacion()+" Dirección: "+
-                    a[i].getDireccion()+" Correo: "+a[i].getCorreo()+" Tipo de sangre: "+a[i].getTipoSangre());
+                    a[i].getDireccion()+" Correo: "+a[i].getCorreo()+" Tipo de sangre: "+a[i].getTipoSangre()+"Enfermedad primaria: "+b[i].getEnfermedadPrimaria()+"Enfermedad secimdaroa: "+b[i].getEnfermedadSecundaria()
+                     +"Fecha adquirida: "+b[i].getFechaAdquirida()+"Sintomas: "+b[i].getSintomasPresentados()+"Medicamentos actuales: "+b[i].getMedicamentosActuales());
     }
      
     }
