@@ -44,16 +44,6 @@ public class Main {
            correo = leer.nextLine();
            System.out.println("Ingresa tu tipo de sangre: ");
            tipoSangre = leer.nextLine();
-          // System.out.println("Ingresa tu tipo de sangre: ");
-          // tipoSangre = leer.nextLine();
-          //  System.out.println("Ingresa tu tipo de sangre: ");
-           //tipoSangre = leer.nextLine();
-            //System.out.println("Ingresa tu tipo de sangre: ");
-           //tipoSangre = leer.nextLine();
-            //System.out.println("Ingresa tu tipo de sangre: ");
-           //tipoSangre = leer.nextLine();
-            //System.out.println("Ingresa tu tipo de sangre: ");
-           //tipoSangre = leer.nextLine();
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
            
        }
