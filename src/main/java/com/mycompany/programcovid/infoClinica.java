@@ -10,7 +10,7 @@ package com.mycompany.programcovid;
  * @author admin
  */
 public class infoClinica {
-    
+    private String nombre;
     private String enfermedadPrimaria;
     private String enfermedadSecundaria;
     private String fechaAdquirida;
@@ -20,8 +20,9 @@ public class infoClinica {
     
     
     
-     public infoClinica(String enfermedadPrimaria, String enfermedadSecundaria,String fechaAdquirida, String sintomasPresentados, String medicamentosActuales){
+     public infoClinica(String nombre,String enfermedadPrimaria, String enfermedadSecundaria,String fechaAdquirida, String sintomasPresentados, String medicamentosActuales){
         this.enfermedadPrimaria=enfermedadPrimaria;
+        this.nombre=nombre;
         this.enfermedadSecundaria=enfermedadSecundaria;
         this.fechaAdquirida=fechaAdquirida;
         this.sintomasPresentados= sintomasPresentados;
@@ -31,7 +32,13 @@ public class infoClinica {
       
     @Override
     public String toString(){
-        return enfermedadPrimaria+","+enfermedadSecundaria+","+fechaAdquirida+","+sintomasPresentados+","+medicamentosActuales;
+        return "Nombre: "+nombre+enfermedadPrimaria+","+enfermedadSecundaria+","+fechaAdquirida+","+sintomasPresentados+","+medicamentosActuales;
+    }
+     public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+     public String getNombre() {
+        return nombre;
     }
 
     public String getEnfermedadPrimaria() {

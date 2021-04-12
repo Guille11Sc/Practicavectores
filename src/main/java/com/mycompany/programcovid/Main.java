@@ -18,6 +18,7 @@ public class Main {
        infoClinica b[]=new infoClinica[2];
        vacunas vacuna=new vacunas();
        listarEdad listaEdades=new listarEdad();
+       
       
        
        String nombre="";
@@ -59,7 +60,7 @@ public class Main {
            medicamentosActuales = leer.nextLine();*/
            
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
-           b[i]= new infoClinica(enfermedadPrimaria,enfermedadSecundaria,fechaAdquirida,sintomasPresentados,medicamentosActuales);
+           b[i]= new infoClinica(nombre,enfermedadPrimaria,enfermedadSecundaria,fechaAdquirida,sintomasPresentados,medicamentosActuales);
            if (edad>50 && ("hipertension".equals(enfermedadPrimaria) || "diabetes".equals(enfermedadPrimaria) || "dislipidemia".equals(enfermedadPrimaria)
                    || "cancer".equals(enfermedadPrimaria) || "tiroides".equals(enfermedadPrimaria) || "huerfana".equals(enfermedadPrimaria))){
            vacuna.restarVacuna();
@@ -79,6 +80,7 @@ public class Main {
      listaEdades.llenarEdad();
      listaEdades.guardarEdad();
      listaEdades.listarEdad();
+     
      
     }
     
