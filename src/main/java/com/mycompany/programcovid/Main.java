@@ -59,8 +59,8 @@ public class Main {
            
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
            b[i]= new infoClinica(enfermedadPrimaria,enfermedadSecundaria,fechaAdquirida,sintomasPresentados,medicamentosActuales);
-           if (edad>50 && enfermedadPrimaria=="hipertension" || enfermedadPrimaria=="diabetes" || enfermedadPrimaria=="dislipidemia"
-                   || enfermedadPrimaria=="cancer" || enfermedadPrimaria=="tiroides" || enfermedadPrimaria=="huerfana"){
+           if (edad>50 && ("hipertension".equals(enfermedadPrimaria) || "diabetes".equals(enfermedadPrimaria) || "dislipidemia".equals(enfermedadPrimaria)
+                   || "cancer".equals(enfermedadPrimaria) || "tiroides".equals(enfermedadPrimaria) || "huerfana".equals(enfermedadPrimaria))){
            vacuna.restarVacuna();
            }
        }

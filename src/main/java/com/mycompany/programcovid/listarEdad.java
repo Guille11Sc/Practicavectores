@@ -1,6 +1,8 @@
 
 package com.mycompany.programcovid;
 
+import java.util.Arrays;
+
 
 public class listarEdad {
     
@@ -14,7 +16,7 @@ public class listarEdad {
 
     @Override
     public String toString() {
-        return "listarEdad{" + "a=" + a + ", menorEdad=" + menorEdad + ", mayorEdad=" + mayorEdad + ", terceraEdad=" + terceraEdad + '}';
+        return "listarEdad{" + "a=" + Arrays.toString(a) + ", menorEdad=" + Arrays.toString(menorEdad) + ", mayorEdad=" + Arrays.toString(mayorEdad) + ", terceraEdad=" + Arrays.toString(terceraEdad) + '}';
     }
 
     
