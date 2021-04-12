@@ -17,6 +17,7 @@ public class Main {
        paciente a[]= new paciente[2];
        infoClinica b[]=new infoClinica[2];
        vacunas vacuna=new vacunas();
+       listarEdad listaEdades=new listarEdad();
        
        String nombre="";
        int edad=0;
@@ -72,6 +73,10 @@ public class Main {
                      +"Fecha adquirida: "+b[i].getFechaAdquirida()+"Sintomas: "+b[i].getSintomasPresentados()+"Medicamentos actuales: "+b[i].getMedicamentosActuales());
     }
      vacuna.mostrarVacunas();
+     listaEdades.llenarEdad();
+     listaEdades.guardarEdad();
+     listaEdades.listarEdad();
+     
     }
     
 }
