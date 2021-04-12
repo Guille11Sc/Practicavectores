@@ -18,6 +18,7 @@ public class Main {
        infoClinica b[]=new infoClinica[2];
        vacunas vacuna=new vacunas();
        listarEdad listaEdades=new listarEdad();
+      
        
        String nombre="";
        int edad=0;
@@ -63,6 +64,7 @@ public class Main {
                    || "cancer".equals(enfermedadPrimaria) || "tiroides".equals(enfermedadPrimaria) || "huerfana".equals(enfermedadPrimaria))){
            vacuna.restarVacuna();
            }
+
        }
        
        
@@ -73,6 +75,7 @@ public class Main {
                      +"Fecha adquirida: "+b[i].getFechaAdquirida()+"Sintomas: "+b[i].getSintomasPresentados()+"Medicamentos actuales: "+b[i].getMedicamentosActuales());
     }
      vacuna.mostrarVacunas();
+     listaEdades.a=a;
      listaEdades.llenarEdad();
      listaEdades.guardarEdad();
      listaEdades.listarEdad();
