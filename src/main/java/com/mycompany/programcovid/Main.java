@@ -18,6 +18,7 @@ public class Main {
        infoClinica b[]=new infoClinica[2];
        vacunas vacuna=new vacunas();
        listarEdad listaEdades=new listarEdad();
+       listarEnfermedad listEnfermedad=new listarEnfermedad();
        
       
        
@@ -80,6 +81,10 @@ public class Main {
      listaEdades.llenarEdad();
      listaEdades.guardarEdad();
      listaEdades.listarEdad();
+     
+     listEnfermedad.guardarEnfermedad();
+     listEnfermedad.imprimirEnfermedad();
+     
      
      
     }

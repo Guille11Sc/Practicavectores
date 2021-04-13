@@ -107,30 +107,30 @@ public class listarEnfermedad {
         for (int i = 0; i < b.length; i++) {
             int j = 0;
 
-            if (enfermedades[i] == "cancer") {
+            if ("cancer".equals(enfermedades[i])) {
                 cancer[i][j] = b[i].getNombre();
-                cancer[i][j + 1] = String.valueOf(b[i].getEnfermedadPrimaria());
-            } else if (enfermedades[i] =="hipertension") {
+                cancer[i][j + 1] = b[i].getEnfermedadPrimaria();
+            } else if ("hipertension".equals(enfermedades[i])) {
                 hipertension[i][j] = b[i].getNombre();
-                hipertension[i][j + 1] = String.valueOf(b[i].getEnfermedadPrimaria());
-            } else if (enfermedades[i] == "tiroides") {
+                hipertension[i][j + 1] = b[i].getEnfermedadPrimaria();
+            } else if ("tiroides".equals(enfermedades[i])) {
                 tiroides[i][j] = b[i].getNombre();
-                tiroides[i][j + 1] = String.valueOf(b[i].getEnfermedadPrimaria());
-            }  else if (enfermedades[i] =="huerfana") {
+                tiroides[i][j + 1] = b[i].getEnfermedadPrimaria();
+            }  else if ("huerfana".equals(enfermedades[i])) {
                 huerfana[i][j] = b[i].getNombre();
-                huerfana[i][j + 1] = String.valueOf(b[i].getEnfermedadPrimaria());
-            }  else if (enfermedades[i] == "diabetes") {
+                huerfana[i][j + 1] = b[i].getEnfermedadPrimaria();
+            }  else if ("diabetes".equals(enfermedades[i])) {
                 diabetes[i][j] = b[i].getNombre();
-                diabetes[i][j + 1] = String.valueOf(b[i].getEnfermedadPrimaria());
-            }  else if (enfermedades[i] == "dislipidemia") {
+                diabetes[i][j + 1] = b[i].getEnfermedadPrimaria();
+            }  else if ("dislipidemia".equals(enfermedades[i])) {
                 dislipidemia[i][j] = b[i].getNombre();
-                dislipidemia[i][j + 1] = String.valueOf(b[i].getEnfermedadPrimaria());
+                dislipidemia[i][j + 1] = b[i].getEnfermedadPrimaria();
             }
 
         }
 
     }
-    public void listarEdad() {
+    public void imprimirEnfermedad() {
         System.out.println("Pacientes con diabetes");
         if ((diabetes[0][0])!= null) {
             for (int i = 0; i < b.length; i++) {

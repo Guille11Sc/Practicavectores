@@ -79,33 +79,36 @@ public class listarEdad {
     }
 
     public void listarEdad() {
-        System.out.println("Edad entre 1-17");
-        if ((menorEdad[0][0])!= null) {
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.println(menorEdad[i][j]+" ");
+        for (int i = 0; i < a.length; i++) {
+               int j=0;
+        
+        if ((menorEdad[i][j])!= null) {
+            System.out.println("Edad entre 1-17");
+            
+                    System.out.println(menorEdad[i][j]+" "+menorEdad[i][j+1]);
+                    System.out.println("");  
                 }
-                System.out.println("");  
-            }
-        }
-        System.out.println("Edad entre 18-49");
-        if ((mayorEdad[0][0]) !=null) {
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(mayorEdad[i][j]+" ");
+                
+            
+        
+        
+        if ((mayorEdad[i][j]) !=null) {
+            System.out.println("Edad entre 18-49");
+                    System.out.print(mayorEdad[i][j]+" "+mayorEdad[i][j+1]);
+                    System.out.println("");  
                 }
-                System.out.println("");    
-            }
-        }
-        System.out.println("Edad mayor a 50");
-        if ((terceraEdad[0][0]) != null) {
-            for (int i = 0; i < a.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(terceraEdad[i][j]+" ");
-                }
+                  
+            
+        
+        
+        if ((terceraEdad[i][j]) != null) {
+          System.out.println("Edad mayor a 50");
+                    System.out.print(terceraEdad[i][j]+" "+terceraEdad[i][j+1]);
+                
                 System.out.println("");  
             }
 
-        }
+        
+    }
     }
 }
