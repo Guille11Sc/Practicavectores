@@ -25,11 +25,10 @@ public class listarEnfermedad {
     public listarEnfermedad(){
         
     }
-    
+
     @Override
-    
-     public String toString() {
-        return "listarEnfermedad{" + "a=" + Arrays.toString(b) + ", diabetes=" + Arrays.toString(diabetes) + ", hipertension=" + Arrays.toString(hipertension) + ", cancer=" + Arrays.toString(cancer) + ", huerfana=" + Arrays.toString(huerfana)+", dislipidemia=" + Arrays.toString(dislipidemia)+ ", tiroides=" + Arrays.toString(tiroides) +'}';
+    public String toString() {
+        return "listarEnfermedad{" + "b=" + Arrays.toString(b) + ", diabetes=" + Arrays.toString(diabetes) + ", hipertension=" + Arrays.toString(hipertension) + ", cancer=" + Arrays.toString(cancer) + ", huerfana=" + Arrays.toString(huerfana) + ", tiroides=" + Arrays.toString(tiroides) + ", dislipidemia=" + Arrays.toString(dislipidemia) + ", enfermedades=" + Arrays.toString(enfermedades) + '}';
     }
 
     public infoClinica[] getB() {
@@ -95,6 +94,12 @@ public class listarEnfermedad {
     public void setEnfermedades(String[] enfermedades) {
         this.enfermedades = enfermedades;
     }
+    
+    
+
+     
+     
+    
      public void llenarEnfermedad() {
         for (int i = 0; i < 2; i++) {
             enfermedades[i] = b[i].getEnfermedadPrimaria();
@@ -131,64 +136,59 @@ public class listarEnfermedad {
 
     }
     public void imprimirEnfermedad() {
-        System.out.println("Pacientes con diabetes");
-        if ((diabetes[0][0])!= null) {
-            for (int i = 0; i < b.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.println(diabetes[i][j]+" ");
-                }
+        
+        for (int i = 0; i < b.length; i++) {
+                int j=0;
+        
+        if ((diabetes[i][j])!= null) {
+            System.out.println("Pacientes con diabetes");
+               System.out.println(diabetes[i][j]+" "+diabetes[i][j+1]);
+                
                 System.out.println("");  
             }
-        }
-        System.out.println("Pacientes con tiroides");
-        if ((tiroides[0][0]) !=null) {
-            for (int i = 0; i < b.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(tiroides[i][j]+" ");
-                }
+        
+        
+        if ((tiroides[i][j]) !=null) {
+            System.out.println("Pacientes con tiroides");
+                System.out.print(tiroides[i][j]+" "+tiroides[i][j+1]);
                 System.out.println("");    
             }
-        }
-        System.out.println("Pacientes con hipertension");
-        if ((hipertension[0][0]) != null) {
-            for (int i = 0; i < b.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(hipertension[i][j]+" ");
-                }
+        
+        
+        if ((hipertension[i][j]) != null) {
+            System.out.println("Pacientes con hipertension");
+                System.out.print(hipertension[i][j]+" "+hipertension[i][j+1]);
                 System.out.println("");  
             }
 
-        }
-         System.out.println("Pacientes con enfermedad huerfana");
-        if ((huerfana[0][0]) != null) {
-            for (int i = 0; i < b.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(huerfana[i][j]+" ");
+        
+         
+        if ((huerfana[i][j]) != null) {
+            System.out.println("Pacientes con enfermedad huerfana");
+                    System.out.print(huerfana[i][j]+" "+huerfana[i][j+1]);
+                    System.out.println(""); 
                 }
-                System.out.println("");  
-            }
+                 
+            
 
-        }
-         System.out.println("Pacientes con dislipidemia");
+        
+         
         if ((dislipidemia[0][0]) != null) {
-            for (int i = 0; i < b.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(dislipidemia[i][j]+" ");
-                }
-                System.out.println("");  
-            }
-
+            System.out.println("Pacientes con dislipidemia");
+            System.out.print(dislipidemia[i][j]+" "+dislipidemia[i][j+1]);
+                
+            System.out.println("");  
+  
         }
          System.out.println("Pacientes con cancer");
         if ((cancer[0][0]) != null) {
-            for (int i = 0; i < b.length; i++) {
-                for (int j = 0; j < 2; j++) {
-                    System.out.print(cancer[i][j]+" ");
-                }
+            
+                System.out.print(cancer[i][j]+" "+cancer[i][j+1]);
                 System.out.println("");  
-            }
+            
 
         }
     }
     
+}
 }

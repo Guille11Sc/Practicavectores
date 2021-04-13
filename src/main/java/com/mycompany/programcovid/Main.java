@@ -81,7 +81,7 @@ public class Main {
      listaEdades.llenarEdad();
      listaEdades.guardarEdad();
      listaEdades.listarEdad();
-     
+     listEnfermedad.llenarEnfermedad();
      listEnfermedad.guardarEnfermedad();
      listEnfermedad.imprimirEnfermedad();
      
