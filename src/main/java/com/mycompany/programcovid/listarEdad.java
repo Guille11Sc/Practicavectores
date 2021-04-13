@@ -4,12 +4,12 @@ import java.util.Arrays;
 
 public class listarEdad {
      //atributos
-    paciente a[] = new paciente[2];
+    paciente a[] = new paciente[5];
     //arrays bidimensionales para listar por rango de edades
-    String menorEdad[][] = new String[a.length][2];
-    String mayorEdad[][] = new String[a.length][2];
-    String terceraEdad[][] = new String[a.length][2];
-    int edades[] = new int[2]; //array para capturar las edades 
+    String menorEdad[][] = new String[a.length][5];
+    String mayorEdad[][] = new String[a.length][5];
+    String terceraEdad[][] = new String[a.length][5];
+    int edades[] = new int[5]; //array para capturar las edades 
     //constructor
     public listarEdad() {
     }
@@ -54,7 +54,7 @@ public class listarEdad {
     //metodos
     //metodo para llenar el array edades con la edad de los pacientes
     public void llenarEdad() {
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 5; i++) {
             edades[i] = a[i].getEdad();
         }
     }

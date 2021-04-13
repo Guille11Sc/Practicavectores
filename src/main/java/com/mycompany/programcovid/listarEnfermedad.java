@@ -12,16 +12,16 @@ import java.util.Arrays;
  */
 public class listarEnfermedad {
     
-    
+        //atributos
     infoClinica b[]=new infoClinica[2];
-    String diabetes[][] = new String[b.length][2];
+    String diabetes[][] = new String[b.length][2];  //arrays bidimensaionales para almacenar el nombre y enfermedadprimaria
     String hipertension[][] = new String[b.length][2];
     String cancer[][] = new String[b.length][2];
     String huerfana[][] = new String[b.length][2];
     String tiroides[][] = new String[b.length][2];
     String dislipidemia[][] = new String[b.length][2];
-    String enfermedades[] = new String[2];
-    
+    String enfermedades[] = new String[2];//array para capturar las enfermedades de los apcientes
+    //constructor
     public listarEnfermedad(){
         
     }
@@ -30,7 +30,7 @@ public class listarEnfermedad {
     public String toString() {
         return "listarEnfermedad{" + "b=" + Arrays.toString(b) + ", diabetes=" + Arrays.toString(diabetes) + ", hipertension=" + Arrays.toString(hipertension) + ", cancer=" + Arrays.toString(cancer) + ", huerfana=" + Arrays.toString(huerfana) + ", tiroides=" + Arrays.toString(tiroides) + ", dislipidemia=" + Arrays.toString(dislipidemia) + ", enfermedades=" + Arrays.toString(enfermedades) + '}';
     }
-
+//get and set
     public infoClinica[] getB() {
         return b;
     }
@@ -97,16 +97,16 @@ public class listarEnfermedad {
     
     
 
+     //metodos
      
-     
-    
+    //metodo para llenar el array enfermedad
      public void llenarEnfermedad() {
         for (int i = 0; i < 2; i++) {
             enfermedades[i] = b[i].getEnfermedadPrimaria();
         }
     }
     
-     
+     //metodo para guardar en los arrays bidimensionales la enfermedadprimaria con el nombre del paciente
     public void guardarEnfermedad() {
 
         for (int i = 0; i < b.length; i++) {
@@ -135,6 +135,7 @@ public class listarEnfermedad {
         }
 
     }
+    //metodo que imprime las enfermedades
     public void imprimirEnfermedad() {
         
         for (int i = 0; i < b.length; i++) {

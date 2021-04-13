@@ -14,12 +14,12 @@ public class Main {
    
     public static void main(String[] args) {
        Scanner leer=new Scanner(System.in);    
-       paciente a[]= new paciente[2];//objeto que manejara la clase paciente
-       infoClinica b[]=new infoClinica[2];//objeto que manejara la clase infoclinica
+       paciente a[]= new paciente[5];//objeto que manejara la clase paciente
+       infoClinica b[]=new infoClinica[5];//objeto que manejara la clase infoclinica
        vacunas vacuna=new vacunas();//objeto que manejara la clase vacuna
        listarEdad listaEdades=new listarEdad();//objeto que listara por edades
        listarEnfermedad listEnfermedad=new listarEnfermedad();//objeto que listara por enfermedades
-       boolean aplicar[]=new boolean[2];//array para saber si se le asigna cita o no
+       boolean aplicar[]=new boolean[5];//array para saber si se le asigna cita o no
       
         //atributos
        String nombre="";

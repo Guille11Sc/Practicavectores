@@ -10,6 +10,7 @@ package com.mycompany.programcovid;
  * @author admin
  */
 public class infoClinica {
+    //atributos
     private String nombre;
     private String enfermedadPrimaria;
     private String enfermedadSecundaria;
@@ -19,7 +20,7 @@ public class infoClinica {
     
     
     
-    
+    //constructor
      public infoClinica(String nombre,String enfermedadPrimaria, String enfermedadSecundaria,String fechaAdquirida, String sintomasPresentados, String medicamentosActuales){
         this.enfermedadPrimaria=enfermedadPrimaria;
         this.nombre=nombre;
@@ -33,7 +34,7 @@ public class infoClinica {
     public String toString() {
         return "infoClinica{" + "nombre=" + nombre + ", enfermedadPrimaria=" + enfermedadPrimaria + ", enfermedadSecundaria=" + enfermedadSecundaria + ", fechaAdquirida=" + fechaAdquirida + ", sintomasPresentados=" + sintomasPresentados + ", medicamentosActuales=" + medicamentosActuales + '}';
     }
-
+//get and set
     public String getNombre() {
         return nombre;
     }
