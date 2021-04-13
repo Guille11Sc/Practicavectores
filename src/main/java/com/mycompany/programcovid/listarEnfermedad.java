@@ -146,8 +146,7 @@ public class listarEnfermedad {
                 
                 System.out.println("");  
             }
-        
-        
+
         if ((tiroides[i][j]) !=null) {
             System.out.println("Pacientes con tiroides");
                 System.out.print(tiroides[i][j]+" "+tiroides[i][j+1]);
@@ -161,28 +160,22 @@ public class listarEnfermedad {
                 System.out.println("");  
             }
 
-        
-         
         if ((huerfana[i][j]) != null) {
             System.out.println("Pacientes con enfermedad huerfana");
                     System.out.print(huerfana[i][j]+" "+huerfana[i][j+1]);
                     System.out.println(""); 
                 }
-                 
-            
 
-        
-         
-        if ((dislipidemia[0][0]) != null) {
+        if ((dislipidemia[i][j]) != null) {
             System.out.println("Pacientes con dislipidemia");
             System.out.print(dislipidemia[i][j]+" "+dislipidemia[i][j+1]);
                 
             System.out.println("");  
   
         }
-         System.out.println("Pacientes con cancer");
-        if ((cancer[0][0]) != null) {
-            
+         
+        if ((cancer[i][j]) != null) {
+            System.out.println("Pacientes con cancer");
                 System.out.print(cancer[i][j]+" "+cancer[i][j+1]);
                 System.out.println("");  
             

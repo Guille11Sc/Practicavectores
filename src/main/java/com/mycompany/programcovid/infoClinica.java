@@ -28,17 +28,18 @@ public class infoClinica {
         this.sintomasPresentados= sintomasPresentados;
         this.medicamentosActuales=medicamentosActuales;
     }
-     
-      
+
     @Override
-    public String toString(){
-        return "Nombre: "+nombre+enfermedadPrimaria+","+enfermedadSecundaria+","+fechaAdquirida+","+sintomasPresentados+","+medicamentosActuales;
+    public String toString() {
+        return "infoClinica{" + "nombre=" + nombre + ", enfermedadPrimaria=" + enfermedadPrimaria + ", enfermedadSecundaria=" + enfermedadSecundaria + ", fechaAdquirida=" + fechaAdquirida + ", sintomasPresentados=" + sintomasPresentados + ", medicamentosActuales=" + medicamentosActuales + '}';
     }
-     public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-     public String getNombre() {
+
+    public String getNombre() {
         return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getEnfermedadPrimaria() {
@@ -80,6 +81,9 @@ public class infoClinica {
     public void setMedicamentosActuales(String medicamentosActuales) {
         this.medicamentosActuales = medicamentosActuales;
     }
+     
+      
+   
 
    
 
