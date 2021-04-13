@@ -11,17 +11,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    
+   
     public static void main(String[] args) {
        Scanner leer=new Scanner(System.in);    
-       paciente a[]= new paciente[2];
-       infoClinica b[]=new infoClinica[2];
-       vacunas vacuna=new vacunas();
-       listarEdad listaEdades=new listarEdad();
-       listarEnfermedad listEnfermedad=new listarEnfermedad();
-       boolean aplicar[]=new boolean[2];
+       paciente a[]= new paciente[2];//objeto que manejara la clase paciente
+       infoClinica b[]=new infoClinica[2];//objeto que manejara la clase infoclinica
+       vacunas vacuna=new vacunas();//objeto que manejara la clase vacuna
+       listarEdad listaEdades=new listarEdad();//objeto que listara por edades
+       listarEnfermedad listEnfermedad=new listarEnfermedad();//objeto que listara por enfermedades
+       boolean aplicar[]=new boolean[2];//array para saber si se le asigna cita o no
       
-       
+        //atributos
        String nombre="";
        int edad=0;
        String identificacion="";
@@ -59,9 +59,10 @@ public class Main {
            sintomasPresentados = leer.nextLine();
            System.out.println("Ingresa medicamento que tome actualmente: ");
            medicamentosActuales = leer.nextLine();
-           
+           //llenar los objetos arrays
            a[i]= new paciente(nombre,edad,identificacion,direccion,correo,tipoSangre);
            b[i]= new infoClinica(nombre,enfermedadPrimaria,enfermedadSecundaria,fechaAdquirida,sintomasPresentados,medicamentosActuales);
+          //condicional para saber si se vacuna o no
            if (edad>50 && ("hipertension".equals(enfermedadPrimaria) || "diabetes".equals(enfermedadPrimaria) || "dislipidemia".equals(enfermedadPrimaria)
                    || "cancer".equals(enfermedadPrimaria) || "tiroides".equals(enfermedadPrimaria) || "huerfana".equals(enfermedadPrimaria))){
            vacuna.restarVacuna();
@@ -87,7 +88,7 @@ public class Main {
                 System.out.println("");
             }
         }
-        
+       //objetos 
      vacuna.mostrarVacunas();
         System.out.println("");
      listaEdades.a=a;

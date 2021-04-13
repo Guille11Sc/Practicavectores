@@ -3,7 +3,7 @@ package com.mycompany.programcovid;
 
 
 public class vacunas {
-    
+    //atributos
     int vacunasTotales=100;
     int dia;
     int mes;
@@ -11,10 +11,10 @@ public class vacunas {
    
     
            
-
+    //constructor
     public vacunas() {
     }
-
+    //getter and setter
     public int getVacunastotales() {
         return vacunasTotales;
     }
@@ -27,8 +27,6 @@ public class vacunas {
     public String toString() {
         return "vacunas{" + "vacunasTotales=" + vacunasTotales + ", dia=" + dia + ", mes=" + mes + ", hora=" + hora + '}';
     }
-
-    
 
     public int getDia() {
         return dia;
@@ -57,16 +55,16 @@ public class vacunas {
     
     
     //metodos
-    
+    //metodo para restar la vacuna al aplicarle a paciente
    public void restarVacuna(){
        vacunasTotales--;
        
    }
-   
+   //metodo para mostrar cuantas vacunas quedan en total
    public void mostrarVacunas(){
        System.out.println("La cantidad de vacunas actuales son: "+vacunasTotales);
    }
-   
+   //metodo para asignar cita
    public void asignarCitas(){
         dia= (int) (Math.random()*29+1);
         mes= (int) (Math.random()*5+1);

@@ -3,13 +3,14 @@ package com.mycompany.programcovid;
 import java.util.Arrays;
 
 public class listarEdad {
-
+     //atributos
     paciente a[] = new paciente[2];
+    //arrays bidimensionales para listar por rango de edades
     String menorEdad[][] = new String[a.length][2];
     String mayorEdad[][] = new String[a.length][2];
     String terceraEdad[][] = new String[a.length][2];
-    int edades[] = new int[2];
-
+    int edades[] = new int[2]; //array para capturar las edades 
+    //constructor
     public listarEdad() {
     }
 
@@ -17,7 +18,7 @@ public class listarEdad {
     public String toString() {
         return "listarEdad{" + "a=" + Arrays.toString(a) + ", menorEdad=" + Arrays.toString(menorEdad) + ", mayorEdad=" + Arrays.toString(mayorEdad) + ", terceraEdad=" + Arrays.toString(terceraEdad) + '}';
     }
-
+     //getter and setter
     public paciente[] getA() {
         return a;
     }
@@ -51,12 +52,13 @@ public class listarEdad {
     }
 
     //metodos
+    //metodo para llenar el array edades con la edad de los pacientes
     public void llenarEdad() {
         for (int i = 0; i < 2; i++) {
             edades[i] = a[i].getEdad();
         }
     }
-
+      //metodo para guardar la edad y el nombre en el array bidimensaional 
     public void guardarEdad() {
 
         for (int i = 0; i < a.length; i++) {
@@ -77,12 +79,12 @@ public class listarEdad {
         }
 
     }
-
+    //metodo para mostrar las edades segun rangos
     public void listarEdad() {
         for (int i = 0; i < a.length; i++) {
                int j=0;
         
-        if ((menorEdad[i][j])!= null) {
+        if ((menorEdad[i][j])!= null) {  //si es diferente de null
             System.out.println("Edad entre 1-17");
             
                     System.out.println(menorEdad[i][j]+" "+menorEdad[i][j+1]);
@@ -101,7 +103,7 @@ public class listarEdad {
             
         
         
-        if ((terceraEdad[i][j]) != null) {
+        if ((terceraEdad[i][j]) != null) {  
           System.out.println("Edad mayor a 50");
                     System.out.print(terceraEdad[i][j]+" "+terceraEdad[i][j+1]);
                 

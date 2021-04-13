@@ -16,7 +16,7 @@ public class paciente {
     
     
     
-    
+    //constructores
     public paciente(String nombre,int edad,String identificacion,String direccion,String correo,String tipoSangre){
         this.nombre=nombre;
         this.edad=edad;
@@ -83,7 +83,7 @@ public class paciente {
     public String getTipoSangre() {
         return tipoSangre;
     }
-    //metodos
+    
    
     
     
