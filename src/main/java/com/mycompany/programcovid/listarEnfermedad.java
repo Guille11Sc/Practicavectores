@@ -13,14 +13,14 @@ import java.util.Arrays;
 public class listarEnfermedad {
     
         //atributos
-    infoClinica b[]=new infoClinica[2];
-    String diabetes[][] = new String[b.length][2];  //arrays bidimensaionales para almacenar el nombre y enfermedadprimaria
-    String hipertension[][] = new String[b.length][2];
-    String cancer[][] = new String[b.length][2];
-    String huerfana[][] = new String[b.length][2];
-    String tiroides[][] = new String[b.length][2];
-    String dislipidemia[][] = new String[b.length][2];
-    String enfermedades[] = new String[2];//array para capturar las enfermedades de los apcientes
+    infoClinica b[]=new infoClinica[5];
+    String diabetes[][] = new String[b.length][5];  //arrays bidimensaionales para almacenar el nombre y enfermedadprimaria
+    String hipertension[][] = new String[b.length][5];
+    String cancer[][] = new String[b.length][5];
+    String huerfana[][] = new String[b.length][5];
+    String tiroides[][] = new String[b.length][5];
+    String dislipidemia[][] = new String[b.length][5];
+    String enfermedades[] = new String[5];//array para capturar las enfermedades de los apcientes
     //constructor
     public listarEnfermedad(){
         
@@ -101,7 +101,7 @@ public class listarEnfermedad {
      
     //metodo para llenar el array enfermedad
      public void llenarEnfermedad() {
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 5; i++) {
             enfermedades[i] = b[i].getEnfermedadPrimaria();
         }
     }

@@ -51,7 +51,7 @@ public class Main {
            tipoSangre = leer.nextLine();
            System.out.println("Ingresa tu Enfermedad primaria: ");
            enfermedadPrimaria = leer.nextLine();
-           System.out.println("Ingresa tu enfermedad Secundaria: ");
+          System.out.println("Ingresa tu enfermedad Secundaria: ");
            enfermedadSecundaria = leer.nextLine();
            System.out.println("Ingresa fecha en que adquirio la enfermedad: ");
            fechaAdquirida = leer.nextLine();
